@@ -1,8 +1,6 @@
-import Router from 'koa-router';
+const router = require('koa-router')()
 
-const router = new Router();
-
-export default (app) => {
+module.exports = (app) => {
   router.get( '/', app.controller.home.index )
   
   router.get('/home', app.controller.home.home)
@@ -14,5 +12,5 @@ export default (app) => {
   router.post('/user/register', app.controller.home.register)
   
   app.use(router.routes())
-    .use(router.allowedMethods())
+     .use(router.allowedMethods())
 }
