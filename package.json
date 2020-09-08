@@ -1,0 +1,35 @@
+{
+  "name": "koa2-tutorial-typescript",
+  "version": "1.0.0",
+  "description": "> 上一节我们学习了中间件的基本概念，本节主要带大家学习下 `koa-router` 路由中间件的使用方法。",
+  "main": "index.js",
+  "scripts": {
+    "dev.js": "nodemon  node  ./code-10-mi-rule/app.js",
+    "dev.ts": "nodemon  -e  ts,tsx  --exec ts-node  ./code-10-mi-rule/app.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ip": "^1.1.5",
+    "koa": "^2.13.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-nunjucks-2": "^3.0.2",
+    "koa-router": "^9.4.0",
+    "koa-static": "^5.0.0",
+    "log4js": "^6.3.0",
+    "nunjucks": "^3.2.2"
+  },
+  "devDependencies": {
+    "@types/ip": "^1.1.0",
+    "@types/koa": "^2.11.4",
+    "@types/koa-bodyparser": "^4.3.0",
+    "@types/koa-router": "^7.4.1",
+    "@types/koa-static": "^4.0.1",
+    "@types/log4js": "^2.3.5",
+    "@types/nunjucks": "^3.1.3",
+    "nodemon": "^2.0.4",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.2"
+  }
+}
