@@ -1,5 +1,5 @@
 // 按照官方示例
-const Koa = require('koa')
+import Koa from 'koa';
 const app = new Koa()
 
 // 记录执行的时间

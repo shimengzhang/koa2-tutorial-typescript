@@ -1,7 +1,9 @@
-const Koa = require('koa')
-const bodyParser = require('koa-bodyparser')
+import Koa from 'koa';
+import bodyParser from 'koa-bodyparser';
+
+import router from './router'
+
 const app = new Koa()
-const router = require('./router')
 
 app.use(bodyParser())
 

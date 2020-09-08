@@ -1,7 +1,7 @@
-const Koa = require('koa')
-// 注意 require('koa-router') 返回的是函数:
-const router = require('koa-router')()
+import Koa from 'koa';
+import Router from 'koa-router'
 const app = new Koa()
+const router = new Router
 
  // 添加路由
  router.get('/', async (ctx, next) => {

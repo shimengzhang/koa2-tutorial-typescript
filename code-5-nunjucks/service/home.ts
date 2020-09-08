@@ -1,5 +1,5 @@
-module.exports = {
-  register: async(name, pwd) => {
+export default  {
+  register: async(name:string, pwd:string) => {
     let data 
     if (name == 'ikcamp' && pwd == '123456') {
       data = `Hello， ${name}！`

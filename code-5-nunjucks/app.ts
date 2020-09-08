@@ -1,10 +1,10 @@
-const Koa = require('koa')
-const path = require('path')
-const bodyParser = require('koa-bodyparser')
+import Koa from 'koa'
+import path from 'path'
+import bodyParser from 'koa-bodyparser'
 const nunjucks = require('koa-nunjucks-2')
 
 const app = new Koa()
-const router = require('./router')
+import router from './router'
 
 app.use(nunjucks({
   ext: 'html',

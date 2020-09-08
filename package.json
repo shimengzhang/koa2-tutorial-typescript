@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev.js": "nodemon  node  ./code-10-mi-rule/app.js",
-    "dev.ts": "nodemon  -e  ts,tsx  --exec ts-node  ./code-10-mi-rule/app.ts"
+    "dev.ts": "nodemon  -e  ts,tsx  --exec ts-node  ./code-5-nunjucks/app.ts"
   },
   "keywords": [],
   "author": "",
