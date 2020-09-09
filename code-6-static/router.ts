@@ -1,6 +1,10 @@
-const router = require('koa-router')()
-const HomeController = require('./controller/home')
-module.exports = (app) => {
+import Router from 'koa-router';
+import Koa from 'koa';
+import HomeController from './controller/home';
+
+const router = new Router()
+
+export default (app:Koa) => {
   router.get( '/', HomeController.index )
   
   router.get('/home', HomeController.home)
@@ -8,6 +12,8 @@ module.exports = (app) => {
   router.get('/home/:id/:name', HomeController.homeParams)
   
   router.get('/user', HomeController.login)
+
+  router.get('/testnj', HomeController.testnj)
   
   router.post('/user/register', HomeController.register)
   

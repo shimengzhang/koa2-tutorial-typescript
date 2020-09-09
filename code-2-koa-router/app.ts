@@ -1,7 +1,7 @@
 import Koa from 'koa';
 import Router from 'koa-router'
 const app = new Koa()
-const router = new Router
+const router = new Router()
 
  // 添加路由
  router.get('/', async (ctx, next) => {
